@@ -26,22 +26,23 @@ Ensure Docker is installed on your system. You can download and install Docker f
 
 Navigate to the directory containing the `Dockerfile` and build the Docker image with the following command:
 
+````sh
 docker build -t nf-pipeline .
-
+`````
 ### 3. Start the Docker Container
 
 Once the image is built, start the Docker container using the command:
-
+````sh
 docker run -it nf-pipeline
-
+`````
 This command will enter the working directory in your Docker container.
 
 ### 4. Run the Nextflow Pipeline
 
 Within the Docker container, you can run the Nextflow pipeline with the parameters you configured in the params.json file using the following command:
-
+````sh
 nextflow run ATAC_CUT_pipeline.nf -params-file params.json
-
+`````
 ## Conclusion
 
 By following these steps, you should be able to run the Dockerized Nextflow pipeline to analyze your ATAC-seq or CUT&Tag data efficiently. For any issues or questions, please refer to the [Nextflow documentation](https://www.nextflow.io/docs/latest/index.html) or raise an issue in this repository.
