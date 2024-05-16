@@ -1,12 +1,12 @@
 # Dockerized Nextflow Pipeline for ATAC-seq and CUT&Tag Data Analysis
 
-This repository contains a Dockerized Nextflow pipeline designed to analyze either ATAC-seq or CUT&Tag data.
+This repository contains a dockerized Nextflow pipeline designed to analyze either ATAC-seq or CUT&Tag Nanopore sequencing data.
 
 ## Prerequisites
 
 Before running the pipeline, ensure you have the following files in the same directory on your machine:
-- Input files: either FASTQ or BAM files
-- `sequencing_summary.txt` file
+- Input file: either FASTQ or BAM file
+- `sequencing_summary.txt` file 
 - Reference genome FASTA file
 - Conda `env.yml` files needed for the workflow
 - `Barplot_Chr.R` and `PieChart.R` scripts
